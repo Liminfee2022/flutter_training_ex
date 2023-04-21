@@ -13,4 +13,8 @@ class CustomTextStyle {
     fontSize: 14,
     fontWeight: FontWeight.w700,
   );
+  static TextStyle body4 = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
 }

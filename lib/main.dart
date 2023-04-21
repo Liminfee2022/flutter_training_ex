@@ -45,7 +45,9 @@ class Retro extends StatelessWidget {
               Navigator.pushNamed(context, RouteGenerator.c4HomePage);
             },),
             const SizedBox(height: 10,),
-            ButtonText(title: 'C5', onPress: () {},),
+            ButtonText(title: 'C5', onPress: () {
+              Navigator.pushNamed(context, RouteGenerator.c5S1);
+            },),
             const SizedBox(height: 10,),
             ButtonText(title: 'C6', onPress: () {},),
             const SizedBox(height: 10,),
