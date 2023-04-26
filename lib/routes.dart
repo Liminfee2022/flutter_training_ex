@@ -4,6 +4,8 @@ import 'package:flutter_training_ex/c5/screens/S1.dart';
 import 'package:flutter_training_ex/c5/screens/S2.dart';
 import 'package:flutter_training_ex/c5/screens/S3.dart';
 import 'package:flutter_training_ex/c5/screens/S4.dart';
+import 'package:flutter_training_ex/c6/screens/DetailC6Screen.dart';
+import 'package:flutter_training_ex/c6/screens/HomeC6Screen.dart';
 
 class RouteGenerator {
   //Common page
@@ -17,6 +19,9 @@ class RouteGenerator {
   static const String c5S2 = '/c5S2';
   static const String c5S3 = '/c5S3';
   static const String c5S4 = '/c5S4';
+  //C6
+  static const String c6S1 = '/c6S1';
+  static const String c6S2 = '/c6S2';
 
   RouteGenerator._();
 
@@ -41,6 +46,14 @@ class RouteGenerator {
       case c5S4:
         return MaterialPageRoute(
           builder: (_) => S4(arguments: settings.arguments),
+        );
+      case c6S1:
+        return MaterialPageRoute(
+          builder: (_) => const HomeC6Screen(),
+        );
+      case c6S2:
+        return MaterialPageRoute(
+          builder: (_) => const DetailC6Screen(),
         );
       default:
         throw const FormatException('Route not found');
